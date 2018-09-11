@@ -3,8 +3,8 @@
 	$cwk_postimg = array(200, 999); // size of featured image on single post.
 	add_image_size( 'cwk-slider', 1420, 447, true ); // Slider
 
-	require_once(get_stylesheet_directory().'/inc/eai_election_results.php');
-	
+	//require_once(get_stylesheet_directory().'/inc/eai_election_results.php');
+
 	 register_sidebar(array(
 			'name' => 'Top Banner Ad',
 			'id' => 'topbanner',
@@ -29,7 +29,7 @@ function my_cat_title($title) {
  return 'My archives title for : ';
 }
 
-add_action( 'post_submitbox_misc_actions', 'fix_autosave' );
+//add_action( 'post_submitbox_misc_actions', 'fix_autosave' );
 function fix_autosave() {
 	$html_out = '<a class="button" href="javascript:" style="float:right;margin:10px;" onclick="jQuery("#submitpost input").removeClass("disabled");return false;">unlock</a> ';
 	echo $html_out;
