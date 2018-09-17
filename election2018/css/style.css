@@ -5,11 +5,15 @@ Description: This is a child theme for Flatsome - 2014 Elections
 Author: Tim Suellentrop
 Author URI: http: //www.reachmaine.com/
 Template: flatsome
-Version: 1.9
+Version: 1.91
 */
 @import url("../flatsome/css/foundation.css");
 /* Colors ---------------------------------------------- */
 /* Typography ------------------------------------------ */
+/* header */
+#masthead .mobile-menu .icon-menu {
+  color: #1e73be; }
+
 /* =Theme customization starts here */
 .from_the_blog_comments {
   display: none;
