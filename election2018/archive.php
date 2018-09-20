@@ -7,13 +7,13 @@
  * @package flatsome
  */
 
-/* modifications 
+/* modifications
 	28Oct14 zig - do_shortcode for category description
 	29Oct14 zig - remove "archives" from category
 	29Oct14 zig - show category description even if no posts.
 */
 
-get_header(); 
+get_header();
 if(!isset($flatsome_opt['blog_layout'])){$flatsome_opt['blog_layout'] = '';}
 ?>
 
@@ -37,7 +37,7 @@ if(isset($flatsome_opt['blog_header'])){ echo do_shortcode($flatsome_opt['blog_h
 		?>
 
 
-	
+
 
 			<header class="page-header">
 				<h1 class="page-title">
@@ -130,7 +130,7 @@ if(isset($flatsome_opt['blog_header'])){ echo do_shortcode($flatsome_opt['blog_h
 
 		<?php else : ?>
 
-			<?php get_template_part( 'no-results', 'archive' ); ?>
+			<?php /* get_template_part( 'no-results', 'archive' ); */ ?>
 
 		<?php endif; ?>
 
@@ -147,7 +147,7 @@ if(isset($flatsome_opt['blog_header'])){ echo do_shortcode($flatsome_opt['blog_h
 		}?>
 	</div><!-- end sidebar -->
 
-</div><!-- end row -->	
+</div><!-- end row -->
 </div><!-- end page-wrapper -->
 
 <?php if($flatsome_opt['blog_style'] == 'blog-pinterest'){ ?>
@@ -163,7 +163,7 @@ if(isset($flatsome_opt['blog_header'])){ echo do_shortcode($flatsome_opt['blog_h
   			$container.packery('layout');
 		});
 	 });
-  </script> 
+  </script>
 <?php } ?>
 
 <?php get_footer(); ?>
