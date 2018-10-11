@@ -60,3 +60,19 @@ aside.widget.widget_recent_entries { // give recent entries some breathing room
 	box-shadow: 7px 15px 33px 0px rgba(0,0,0,0.75);
 	margin-bottom: 35px;
 }
+// blog archive
+.blog-pinterest-style,
+.archive {
+	.post-date {
+		display: none;
+	}
+}
+
+// single blog post
+.single-post {
+	article {
+		.entry-meta {
+			display: none;
+		}
+	}
+}

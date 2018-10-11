@@ -48,3 +48,10 @@ aside.widget.widget_recent_entries li {
   -moz-box-shadow: 7px 15px 33px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 7px 15px 33px 0px rgba(0, 0, 0, 0.75);
   margin-bottom: 35px; }
+
+.blog-pinterest-style .post-date,
+.archive .post-date {
+  display: none; }
+
+.single-post article .entry-meta {
+  display: none; }
